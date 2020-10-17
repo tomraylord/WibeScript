@@ -1,4 +1,4 @@
-![](wibescriptrgb.GIF)
+![](wibescriptrgb.gif)
 
 ![](3x.gif)
 
