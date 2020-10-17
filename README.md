@@ -1,5 +1,3 @@
-# Wibe Script  
-
 ![](wibescript.GIF)
 
 ![](3x.gif)
