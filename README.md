@@ -2,5 +2,4 @@
 
 ![](gifs/3x.gif)
 
-je vais tu va on the haters
- - tom
+'je vais tu va on the haters' - Tom
