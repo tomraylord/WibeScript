@@ -1,5 +1,6 @@
-![](wibescriptrgb.gif)
+![](gifs/wibescriptrgb.gif)
 
-![](3x.gif)
+![](gifs/3x.gif)
 
 je vais tu va on the haters
+ - tom
