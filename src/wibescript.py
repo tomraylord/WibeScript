@@ -128,15 +128,6 @@ def menu():
     global advancedmenu
     global target
     printasciiart()
-    # print('''
-    #    ╔════════════════════════════════════════════════════════════════╗
-    #    ║ 1 - Ping IP                    4 - VPN                         ║
-    #    ║ 2 - Generate Password          5 - GeoIP                       ║
-    #    ║ 3 - Fake Email                                                 ║
-    #    ║                                                                ║
-    #    ║ 0 - Credits                                                    ║
-    #    ╚════════════════════════════════════════════════════════════════╝
-    #    ''')
     print('''
 
          1 - Ping IP                    2 - Generate Password
@@ -242,8 +233,7 @@ def menu():
         clear()
         menu()
 
-# ################################################################
-# Main 'Script'
+######
 
 os.system("title WibeScript made by timothy#3273")
 
