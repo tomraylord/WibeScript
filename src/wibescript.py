@@ -14,7 +14,7 @@ T = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 
 # ################################################################
 
 def clear():
-    print('\n' * 100)
+    os.system("cls")
 
 # ################################################################
 # Purpose:
@@ -72,9 +72,9 @@ rgbthread = threading.Thread(target=rgbthread)
 # Comment out line below to stop RGB and regain CTRL + C
 rgbthread.start()
 
-#
-#
-#
+# ################################################################
+# Purpose: Port scanner lib
+# ################################################################
 
 target = ""
 queue = Queue()
@@ -89,23 +89,9 @@ def portscan(port):
     except:
         return False
 
-def get_ports(mode):
-    if mode == 1:
-        for port in range(1, 1024):
-            queue.put(port)
-    elif mode == 2:
-        for port in range(1, 49152):
-            queue.put(port)
-    elif mode == 3:
-        ports = [20, 21, 22, 23, 25, 53, 80, 110, 443]
-        for port in ports:
-            queue.put(port)
-    elif mode == 4:
-        ports = input("Enter your ports (seperate by blank):")
-        ports = ports.split()
-        ports = list(map(int, ports))
-        for port in ports:
-            queue.put(port)
+def get_ports():
+    for port in range(1, 49152):
+        queue.put(port)
 
 def worker():
     while not queue.empty():
@@ -114,9 +100,9 @@ def worker():
             print("\tPort {} is open!".format(port))
             open_ports.append(port)
 
-def run_scanner(threads, mode):
+def run_scanner(threads):
 
-    get_ports(mode)
+    get_ports()
 
     thread_list = []
 
@@ -132,7 +118,7 @@ def run_scanner(threads, mode):
 
     print("\tOpen ports are:", open_ports)
 
-# run_scanner(100, 1)
+# ################################################################
 
 # ################################################################
 # Purpose: Main Menu
@@ -244,7 +230,7 @@ def menu():
             opta4_ip = input('\n\tIP Address: ')
             target = opta4_ip
             print('\n')
-            run_scanner(100, 1)
+            run_scanner(100)
             time.sleep(10)
             clear()
             menu()
