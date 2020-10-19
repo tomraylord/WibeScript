@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['depend\\wibescript.py'],
+a = Analysis(['..\\src\\wibescript.py'],
              pathex=['D:\\GitHub\\wibe-script\\build'],
              binaries=[],
              datas=[],
