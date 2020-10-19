@@ -1,3 +1,5 @@
+*BUILT .EXE MOVED TO /build/dist/WibeScript.exe*
+
 ![](gifs/wibescriptrgb.gif)
 
 ![](gifs/3x.gif)
