@@ -97,7 +97,7 @@ def worker():
     while not queue.empty():
         port = queue.get()
         if portscan(port):
-            print("\tPort {} is open!".format(port))
+            print("\tPort {} is open.".format(port))
             open_ports.append(port)
 
 def run_scanner(threads):
@@ -117,6 +117,7 @@ def run_scanner(threads):
         thread.join()
 
     print("\tOpen ports are:", open_ports)
+    open_ports.clear()
 
 # ################################################################
 
@@ -220,7 +221,6 @@ def menu():
         if advancedmenu == True:
             opta4_ip = input('\n\tIP Address: ')
             target = opta4_ip
-            print('\n')
             run_scanner(100)
             time.sleep(10)
             clear()
