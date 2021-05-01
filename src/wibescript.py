@@ -235,7 +235,7 @@ def menu():
 
 ######
 
-os.system("title WibeScript made by timothy#3273")
+os.system("title WibeScript made by tom.#3273")
 
 clear()
 login()
